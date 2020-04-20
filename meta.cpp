@@ -23,7 +23,6 @@ template<>
 struct Fib<0> {
 	static int const value = 0;
 };
-
 template<>
 struct Fib<1> {
 	static int const value = 1;
