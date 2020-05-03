@@ -41,7 +41,7 @@ struct IntList<first, Ints...> {
 template<>
 struct IntList<> {};
 
-	
+
 template <typename TL>
 struct Length {
 	static int const value = 1 +
@@ -96,7 +96,7 @@ struct Square
 };
 
 int main (int argc, char** argv){
-	 std::cout << Fib<7>::value << '\n';
+	 std::cout << Fib<27>::value << '\n';
 	 std::cout << Fib<8>::value << std::endl;
 //  using primes = IntList<3, 4, 5, 7, 11, 13>;
 //	constexpr int head = primes::Head;
