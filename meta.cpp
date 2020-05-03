@@ -78,7 +78,6 @@ struct Generate<0, IntList<Types...>> {
 	using type = IntList<0, Types...>;
 };
 
-
 template <typename TL>
 void print(){
 	std::cout << TL::Head << " ";
@@ -95,9 +94,17 @@ struct Square
 	static constexpr int value = N * N;
 };
 
+
 int main (int argc, char** argv){
+<<<<<<< HEAD
 	 std::cout << Fib<27>::value << '\n';
 	 std::cout << Fib<8>::value << std::endl;
+=======
+    std::cout << Fib<17>::value << '\n';
+    std::cout << Fib<9>::value << std::endl;
+    using primes = IntList<3, 4, 5, 7, 11, 13>;
+    constexpr size_t len = Length<primes>::value;
+>>>>>>> change meta.cpp, meta
 //  using primes = IntList<3, 4, 5, 7, 11, 13>;
 //	constexpr int head = primes::Head;
 //	using odd_primes = primes::Tail;
